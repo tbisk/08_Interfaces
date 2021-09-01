@@ -16,10 +16,6 @@ public class App {
     ausgabe(queen.fly());
     ausgabe(drone.fly());
 
-    // Das sollte eigentlich nicht möglich sein!  --> Abstrakte Klassen!
-    HoneyBee bee = new HoneyBee();
-    ausgabe(bee.doYourJob());
-
 
     }
 
