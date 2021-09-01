@@ -25,7 +25,6 @@ public class App {
     ausgabe(queen.fly());
     ausgabe(drone.fly());
     ausgabe(bird.fly());
-
     }
 
     private static void ausgabe(String outStr) {
