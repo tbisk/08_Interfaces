@@ -1,4 +1,8 @@
 package com.cc.java;
+
+import com.cc.java.bees.*;
+import com.cc.java.birds.Bird;
+
 public class App {
     public static void main(String[] args) {
       
@@ -6,20 +10,21 @@ public class App {
     HoneyBee queen = new Queen();
     HoneyBee drone = new Drone();
 
+    Bird bird = new Bird();
+
+    ausgabe("----- Bees -----");
     ausgabe(worker.doYourJob());
     ausgabe(queen.doYourJob());
     ausgabe(drone.doYourJob());
-
-    ausgabe("------------------");
-
+    ausgabe("");
+    ausgabe("----- Birds -----");
+    ausgabe(bird.hasFeathers());
+    ausgabe("");
+    ausgabe("----- Bees & Birds -----");
     ausgabe(worker.fly());
     ausgabe(queen.fly());
     ausgabe(drone.fly());
-
-    // Das sollte eigentlich nicht möglich sein!  --> Abstrakte Klassen!
-    HoneyBee bee = new HoneyBee();
-    ausgabe(bee.doYourJob());
-
+    ausgabe(bird.fly());
 
     }
 
